@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="332dp"
+        android:layout_height="589dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFF00"
+            android:padding="7px"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textAppearance="@color/cardview_shadow_start_color"
+            android:textSize="30dp"
+            android:textStyle="bold"></TextView>
+
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="00:00:00"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textAppearance="@color/cardview_shadow_start_color"-->
+        <!--            android:padding="7px"-->
+        <!--            android:textStyle="normal"-->
+        <!--            android:textSize="50dp"-->
+        <!--            android:layout_marginTop="35px">-->
+        <!--        </TextView>-->
+
+
+        <Button
+            android:id="@+id/btnstart"
+            android:layout_width="800px"
+            android:layout_height="800px"
+            android:layout_gravity="center"
+            android:layout_marginTop="29px"
+            android:background="@drawable/roundshape"
+            android:onClick="onclickstart"
+            android:padding="20px"
+            android:text="@string/Start"
+            android:textColor="#FFFF00"
+            android:textSize="120px">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnstop"
+            android:layout_width="110dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70px"
+            android:background="@drawable/btnstop"
+            android:onClick="onclickstop"
+            android:text="@string/Stop"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnreset"
+            android:layout_width="110dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70px"
+            android:background="@drawable/btnstop"
+            android:onClick="onclickreset"
+            android:text="@string/Reset"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </Button>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
